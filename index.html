@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clarity Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" class="logoImage">
+    </nav>
+    <h1>CLARITY HUB</h1>
+    <header>
+        <h2>Simplifying research, making data accessible for all</h2>
+    </header>
+    <main>
+        <section>
+            <h3>About Clarity Hub</h3>
+            <p>Our mission is to simplify the learning process in an era of overwhelming information and online distractions...</p>
+            <div id="chat-container">
+                <h2>Chatbot Assistance</h2>
+                <p>Our AI chatbot provides personalized support for various topics. Ask questions, get explanations, and learn more!</p>
+                <div id="chat-box">
+                    <div class="message bot-message">Hello! What would you like me to help with? Choose a topic to learn:</div>
+                </div>
+                <input type="text" id="user-input" placeholder="Type your message here...">
+                <button id="send-btn">Send</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Clarity Hub. All rights reserved.</p>
+    </footer>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="quiz-question"></h2>
+            <input type="text" id="quiz-answer" placeholder="Your answer...">
+            <button id="submit-quiz">Submit</button>
+        </div>
+    </div>
+
+    <div id="metrics-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Quiz Metrics</h2>
+            <div id="metrics-content"></div>
+            <button id="close-metrics">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
